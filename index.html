@@ -1,0 +1,664 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>...</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <script src="scripts/module/jquery-1.10.2.min.js"></script>
+    <script src="scripts/module/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <article>
+                <h1 class="logo">
+                        <a href="" >
+                            <img src="images/common/logo.png" alt="로고">
+                        </a>
+                    </h1>
+                <div class="gnb_area">
+                    <div class="util">
+                        <ul>
+                            <li><a href="">
+                                <img src="images/common/icon_login.png" alt="">
+                                로그인
+                            </a></li>
+                            <li><a href="">
+                                <img src="images/common/icon_join.png" alt="">
+                                회원가입
+                            </a></li>
+                            <li><a href="">
+                                <img src="images/common/icon_language.png" alt="">
+                                ENG
+                            </a></li>
+                        </ul>
+                    </div>
+                    <nav>
+                        <ul class="gnb">
+                            <li>
+                                <a href="">게임물관련사업자교육</a>
+                                <ul class="sub_menu">
+                                    <li><a href="">청소년게임제공업</a></li>
+                                    <li><a href="">인터넷컴퓨터게임시설제공업</a></li>
+                                    <li><a href="">일반게임제공업</a></li>
+                                    <li><a href="">복합유통게임제공업</a></li>
+                                    <li><a href="">게임제작업</a></li>
+                                    <li><a href="">게임배급업</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">자체등급분류사업자교육</a>
+                                <ul class="sub_menu">
+                                    <li><a href="">청소년게임제공업</a></li>
+                                    <li><a href="">인터넷컴퓨터게임시설제공업</a></li>
+                                    <li><a href="">게임제작업</a></li>
+                                    <li><a href="">게임배급업</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">공무원맞춤교육</a>
+                                <ul class="sub_menu">
+                                    <li><a href="">청소년게임제공업</a></li>
+                                    <li><a href="">게임배급업</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">게임물이용자교육</a>
+                                <ul class="sub_menu">
+                                    <li><a href="">청소년게임제공업</a></li>
+                                    <li><a href="">게임배급업</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">소통공간</a>
+                                <ul class="sub_menu">
+                                    <li><a href="">청소년게임제공업</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul class="mobile_btn">
+                            <li class="login"><a href=""><img src="images/common/icon_login.png" alt=""></a></li>
+                            <li class="all_btn"><img src="images/common/icon_nav_all.svg" alt=""></li>
+                        </ul>
+                    </nav>
+                </div>
+            </article>
+            <div class="all-menu">
+                <div class="top">
+                    <h1 class="logo">
+                        <a href="">
+                            <img src="images/common/logo.png" alt="로고">
+                        </a>
+                    </h1>
+                    <ul class="mo_util">
+                        <li class="mo_login"><a href="">로그인</a></li>
+                        <li><a href="">회원가입</a></li>
+                        <li><a href="">마이페이지</a></li>
+                    </ul>
+                    <i class="close">
+                        <img class="pc_close" src="images/common/header_icon_close.svg" alt="전체메뉴닫기버튼">
+                        <img class="mo_close" src="images/common/mo_header_icon_close.svg" alt="모바일_전체메뉴닫기버튼">
+                    </i>
+                </div>
+                <div class="favorite">
+                    <div class="favo_tit">
+                        <h4>FAVORITE MENU</h4>
+                        <a href="">MENU PLUS <i><img src="images/common/icon_plus.png" alt=""></i></a>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img src="images/module/mo_favo_icon01.png" alt="자주사용하는메뉴아이콘">
+                                <span>청소년게임<br>제공업</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/module/mo_favo_icon02.png" alt="자주사용하는메뉴아이콘">
+                                <span>인터넷컴퓨터<br>제공업</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/module/mo_favo_icon03.png" alt="자주사용하는메뉴아이콘">
+                                <span>나의 학습방</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/module/mo_favo_icon04.png" alt="자주사용하는메뉴아이콘">
+                                <span>자주하는 질문</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/common/mo_icon_pius.png" alt="자주사용하는메뉴아이콘">
+                                <span></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="images/common/mo_icon_pius.png" alt="자주사용하는메뉴아이콘">
+                                <span></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu_list">
+                    <div class="part">
+                        <ul>
+                            <li>
+                                <span class="tit">게임물관련사업자교육<img src="images/common/mo_allmenu_arrow.svg" alt=""></span>
+                                <ul class="mo_sub_menu">
+                                    <li><a href="">청소년게임제공업</a></li>
+                                    <li><a href="">인터넷컴퓨터게임시설제공업</a></li>
+                                    <li><a href="">일반게임제공업</a></li>
+                                    <li><a href="">복합유통게임제공업</a></li>
+                                    <li><a href="">게임제작업</a></li>
+                                    <li><a href="">게임배급업</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="part">
+                        <ul>
+                            <li>
+                                <span class="tit">자체등급분류사업자교육<img src="images/common/mo_allmenu_arrow.svg" alt=""></span>
+                                <ul class="mo_sub_menu">
+                                    <li><a href="">청소년게임제공업</a></li>
+                                    <li><a href="">인터넷컴퓨터게임시설제공업</a></li>
+                                    <li><a href="">게임제작업</a></li>
+                                    <li><a href="">게임배급업</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span class="tit">공무원맞춤교육<img src="images/common/mo_allmenu_arrow.svg" alt=""></span>
+                                <ul class="mo_sub_menu">
+                                    <li><a href="">청소년게임제공업</a></li>
+                                    <li><a href="">게임배급업</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="part">
+                        <ul>
+                            <li>
+                                <span class="tit">게임물이용자교육<img src="images/common/mo_allmenu_arrow.svg" alt=""></span>
+                                <ul class="mo_sub_menu">
+                                    <li><a href="">청소년게임제공업</a></li>
+                                    <li><a href="">게임배급업</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <span class="tit">소통공간<img src="images/common/mo_allmenu_arrow.svg" alt=""></span>
+                                <ul class="mo_sub_menu">
+                                    <li><a href="">청소년게임제공업</a></li>
+                                </ul>
+                            </li>
+                        </ul>   
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="container" class="main">
+            <section class="swiper main_swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide" style="background-image: url('images/module/main_banner.png');">
+                        <div class="txt_area">
+                            <i>KNMM</i>
+                            <p>즐거운 게임의 시작은<br><span>"이용등급표시"</span>확인부터</p>
+                            <span>푸른 게임 문화를 만들어 가는 첫걸음 이용등급을 먼저 확인하세요.</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide" style="background-image: url('images/module/main_banner02.png');">
+                        <div class="txt_area">
+                            <i>KNMM</i>
+                            <p>즐거운 게임의 시작은<br><span>"이용등급표시"</span> 확인부터</p>
+                            <span>푸른 게임 문화를 만들어 가는 첫걸음 이용등급을 먼저 확인하세요.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="control">
+                    <div class="pagination"></div>
+                    <div class="progress"></div>
+                    <div class="playpause">
+                        <button class="play">
+                            <img src="images/common/main_bn_play.png" alt="">
+                        </button>
+                        <button class="stop">
+                            <img src="images/common/main_bn_pause.svg" alt="">
+                        </button>
+                    </div>
+                    <div class="arrow">
+                        <div class="bn_arrow prev">
+                            <img src="images/common/main_bn_left.svg" alt="이전">
+                        </div>
+                        <div class="bn_arrow next">
+                            <img src="images/common/main_bn_right.svg" alt="다음">
+                        </div>
+                    </div>
+                </div>
+            </section>
+             <section class="education">
+                <article>
+                    <div class="tit">
+                        <p>게임물관리위원회의 교육안내</p>
+                        <h3><span class="color">GRAC</span> education</h3>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i>
+                                    <img src="images/module/edu_icon01.png" alt="게임물관리위원회의 교육안내의 아이콘1">
+                                </i>
+                                <div class="cnts">
+                                    <h5>게임물관련사업자</h5>
+                                    <span>게임물관련사업자교육에 간략한 설명을 넣어야 함. 위원회에서 받아야 하는 내용임</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i>
+                                    <img src="images/module/edu_icon02.png" alt="게임물관리위원회의 교육안내의 아이콘2">
+                                </i>
+                                <div class="cnts">
+                                    <h5>자체등급뷴류사업자</h5>
+                                    <span>게임물관련사업자교육에 간략한 설명을 넣어야 함. 위원회에서 받아야 하는 내용임</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i>
+                                    <img src="images/module/edu_icon03.png" alt="게임물관리위원회의 교육안내의 아이콘3">
+                                </i>
+                                <div class="cnts">
+                                    <h5>지자체공무원</h5>
+                                    <span>게임물관련사업자교육에 간략한 설명을 넣어야 함. 위원회에서 받아야 하는 내용임</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i>
+                                    <img src="images/module/edu_icon04.png" alt="게임물관리위원회의 교육안내의 아이콘4">
+                                </i>
+                                <div class="cnts">
+                                    <h5>게임물이용자</h5>
+                                    <span>게임물관련사업자교육에 간략한 설명을 넣어야 함. 위원회에서 받아야 하는 내용임</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </article>
+
+             </section>
+             <section class="contact">
+                <article>
+                    <ul>
+                        <li>
+                            <i>
+                                <img src="images/module/con_icon01.png" alt="">
+                            </i>
+                            <h6>051-720-6837</h6>
+                            <span>교육문의 (교육사업팁)</span>
+                        </li>
+                        <li>
+                            <i>
+                                <img src="images/module/con_icon02.png" alt="">
+                            </i>
+                            <h6>000-0000-0000</h6>
+                            <span>시스템 관련 문의</span>
+                        </li>
+                        <li>
+                            <i>
+                                <img src="images/module/con_icon01.png" alt="">
+                            </i>
+                            <h6>방문교육 신청</h6>
+                            <span><a href="">신청하러 가기</a></span>
+                        </li>
+                    </ul>
+                </article>
+             </section>
+             <section class="curri">
+                <article>
+                    <div class="tit">
+                        <p>게임물관련위원회의 교육과정</p>
+                        <h3><span class="color">GRAC</span> Curriculum</h3>
+                    </div>
+                    <!-- 게임물관련사업 -->
+                    <div class="slide_area">
+                        <h5>게임물관련 사업자 - 법정교육</h5>
+                        <a href="" class="more">
+                            <img src="images/common/icon_plus.png" alt="게임물관련 사업자 - 법정교육 더보기">
+                        </a>
+                        <div class="data_none">
+                            <p>현재 신청할 수 있는 강의가 없습니다.</p>
+                        </div>
+                    </div>
+                    <!-- //게임물관련사업 -->
+                    <!-- 지자체공무원 -->
+                    <div class="slide_area">
+                        <h5>지자체 공무원 - 법정교육</h5>
+                        <a href="" class="more">
+                            <img src="images/common/icon_plus.png" alt="지자체 공무원 - 법정교육 더보기">
+                        </a>
+                        <div class="swiper curri_slide">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a href="">
+                                        <img src="images/module/curri1-1.png" alt="지자체공무원 불법게임물 근절 공익광고 이미지">
+                                    </a>
+                                    <i>지자체 공무원</i>
+                                    <a class="sub_tit">불법게임물 근절 공익광고 “이렇게 됐지” 불법 프로그램 편</a>
+                                    <ul>
+                                        <li class="nth">법정교육 4차시</li>
+                                        <li>교육기간 : 2021-06-16 ~ 2021-06-20</li>
+                                        <li>모집정원 : 10,000명</li>
+                                    </ul>
+                                    <span class="point"><b>4.8</b> / 5.0</span>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="">
+                                        <img src="images/module/curri1-2.png" alt="지자체공무원 불법게임물 근절 공익광고 이미지">
+                                    </a>
+                                    <i>지자체 공무원</i>
+                                    <a class="sub_tit">게임물관리위원회 교육 영상 본편</a>
+                                    <ul>
+                                        <li class="nth">법정교육 4차시</li>
+                                        <li>교육기간 : 2021-06-16 ~ 2021-06-20</li>
+                                        <li>모집정원 : 10,000명</li>
+                                    </ul>
+                                    <span class="point"><b>4.8</b> / 5.0</span>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="">
+                                        <img src="images/module/curri1-3.png" alt="지자체공무원 불법게임물 근절 공익광고 이미지">
+                                    </a>
+                                    <i>지자체 공무원</i>
+                                    <a class="sub_tit">게임물관리위원회 지자체 공무원 필수 교육</a>
+                                    <ul>
+                                        <li class="nth">법정교육 6차시</li>
+                                        <li>교육기간 : 2021-06-16 ~ 2021-06-20</li>
+                                        <li>모집정원 : 10,000명</li>
+                                    </ul>
+                                    <span class="point"><b>4.8</b> / 5.0</span>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="">
+                                        <img src="images/module/curri3-1.png" alt="지자체공무원 불법게임물 근절 공익광고 이미지">
+                                    </a>
+                                    <i>지자체 공무원</i>
+                                    <a class="sub_tit">게임물관리위원회 지자체 공무원 필수 교육</a>
+                                    <ul>
+                                        <li class="nth">법정교육 6차시</li>
+                                        <li>교육기간 : 2021-06-16 ~ 2021-06-20</li>
+                                        <li>모집정원 : 10,000명</li>
+                                    </ul>
+                                    <span class="point"><b>4.8</b> / 5.0</span>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="">
+                                        <img src="images/module/curri3-2.png" alt="지자체공무원 불법게임물 근절 공익광고 이미지">
+                                    </a>
+                                    <i>지자체 공무원</i>
+                                    <a class="sub_tit">게임물관리위원회 지자체 공무원 필수 교육</a>
+                                    <ul>
+                                        <li class="nth">법정교육 6차시</li>
+                                        <li>교육기간 : 2021-06-16 ~ 2021-06-20</li>
+                                        <li>모집정원 : 10,000명</li>
+                                    </ul>
+                                    <span class="point"><b>4.8</b> / 5.0</span>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="">
+                                        <img src="images/module/curri3-3.png" alt="지자체공무원 불법게임물 근절 공익광고 이미지">
+                                    </a>
+                                    <i>지자체 공무원</i>
+                                    <a class="sub_tit">게임물관리위원회 지자체 공무원 필수 교육</a>
+                                    <ul>
+                                        <li class="nth">법정교육 6차시</li>
+                                        <li>교육기간 : 2021-06-16 ~ 2021-06-20</li>
+                                        <li>모집정원 : 10,000명</li>
+                                    </ul>
+                                    <span class="point"><b>4.8</b> / 5.0</span>
+                                </li>
+                            </ul>
+                            <div class="curri_next">
+                                <img src="images/common/slide_icon_arrow_right.png" alt="">
+                            </div>
+                            <div class="curri_prev">
+                                <img src="images/common/slide_icon_arrow_left.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //지자체공무원 -->
+                    <!-- 자체등급분류 -->
+                    <div class="slide_area">
+                        <h5>자체등급분류 사업자 - 직무능력향상</h5>
+                        <a href="" class="more">
+                            <img src="images/common/icon_plus.png" alt="자체등급분류 사업자 - 직무능력향상 더보기">
+                        </a>
+                        <div class="swiper curri_slide">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a href="">
+                                        <img src="images/module/curri1-1.png" alt="지자체공무원 불법게임물 근절 공익광고 이미지">
+                                    </a>
+                                    <i>지자체 공무원</i>
+                                    <a class="sub_tit">불법게임물 근절 공익광고 “이렇게 됐지” 불법 프로그램 편</a>
+                                    <ul>
+                                        <li class="nth">법정교육 4차시</li>
+                                        <li>교육기간 : 2021-06-16 ~ 2021-06-20</li>
+                                        <li>모집정원 : 10,000명</li>
+                                    </ul>
+                                    <span class="point"><b>4.8</b> / 5.0</span>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="">
+                                        <img src="images/module/curri1-2.png" alt="지자체공무원 불법게임물 근절 공익광고 이미지">
+                                    </a>
+                                    <i>지자체 공무원</i>
+                                    <a class="sub_tit">게임물관리위원회 교육 영상 본편</a>
+                                    <ul>
+                                        <li class="nth">법정교육 4차시</li>
+                                        <li>교육기간 : 2021-06-16 ~ 2021-06-20</li>
+                                        <li>모집정원 : 10,000명</li>
+                                    </ul>
+                                    <span class="point"><b>4.8</b> / 5.0</span>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="">
+                                        <img src="images/module/curri1-3.png" alt="지자체공무원 불법게임물 근절 공익광고 이미지">
+                                    </a>
+                                    <i>지자체 공무원</i>
+                                    <a class="sub_tit">게임물관리위원회 지자체 공무원 필수 교육</a>
+                                    <ul>
+                                        <li class="nth">법정교육 6차시</li>
+                                        <li>교육기간 : 2021-06-16 ~ 2021-06-20</li>
+                                        <li>모집정원 : 10,000명</li>
+                                    </ul>
+                                    <span class="point"><b>4.8</b> / 5.0</span>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="">
+                                        <img src="images/module/curri3-1.png" alt="지자체공무원 불법게임물 근절 공익광고 이미지">
+                                    </a>
+                                    <i>지자체 공무원</i>
+                                    <a class="sub_tit">게임물관리위원회 지자체 공무원 필수 교육</a>
+                                    <ul>
+                                        <li class="nth">법정교육 6차시</li>
+                                        <li>교육기간 : 2021-06-16 ~ 2021-06-20</li>
+                                        <li>모집정원 : 10,000명</li>
+                                    </ul>
+                                    <span class="point"><b>4.8</b> / 5.0</span>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="">
+                                        <img src="images/module/curri3-2.png" alt="지자체공무원 불법게임물 근절 공익광고 이미지">
+                                    </a>
+                                    <i>지자체 공무원</i>
+                                    <a class="sub_tit">게임물관리위원회 지자체 공무원 필수 교육</a>
+                                    <ul>
+                                        <li class="nth">법정교육 6차시</li>
+                                        <li>교육기간 : 2021-06-16 ~ 2021-06-20</li>
+                                        <li>모집정원 : 10,000명</li>
+                                    </ul>
+                                    <span class="point"><b>4.8</b> / 5.0</span>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="">
+                                        <img src="images/module/curri3-3.png" alt="지자체공무원 불법게임물 근절 공익광고 이미지">
+                                    </a>
+                                    <i>지자체 공무원</i>
+                                    <a class="sub_tit">게임물관리위원회 지자체 공무원 필수 교육</a>
+                                    <ul>
+                                        <li class="nth">법정교육 6차시</li>
+                                        <li>교육기간 : 2021-06-16 ~ 2021-06-20</li>
+                                        <li>모집정원 : 10,000명</li>
+                                    </ul>
+                                    <span class="point"><b>4.8</b> / 5.0</span>
+                                </li>
+                            </ul>
+                            <div class="curri_next">
+                                <img src="images/common/slide_icon_arrow_right.png" alt="">
+                            </div>
+                            <div class="curri_prev">
+                                <img src="images/common/slide_icon_arrow_left.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //자체등급분류 -->
+                    <!-- 게임물이용자 -->
+                    <div class="slide_area">
+                        <h5>게임물 이용자 - 무료교육</h5>
+                        <a href="" class="more">
+                            <img src="images/common/icon_plus.png" alt="자체등급분류 사업자 - 직무능력향상 더보기">
+                        </a>
+                        <div class="swiper curri_slide">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <a href="">
+                                        <img src="images/module/curri1-1.png" alt="지자체공무원 불법게임물 근절 공익광고 이미지">
+                                    </a>
+                                    <i>지자체 공무원</i>
+                                    <a class="sub_tit">불법게임물 근절 공익광고 “이렇게 됐지” 불법 프로그램 편</a>
+                                    <ul>
+                                        <li class="nth">법정교육 4차시</li>
+                                        <li>교육기간 : 2021-06-16 ~ 2021-06-20</li>
+                                        <li>모집정원 : 10,000명</li>
+                                    </ul>
+                                    <span class="point"><b>4.8</b> / 5.0</span>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="">
+                                        <img src="images/module/curri1-2.png" alt="지자체공무원 불법게임물 근절 공익광고 이미지">
+                                    </a>
+                                    <i>지자체 공무원</i>
+                                    <a class="sub_tit">게임물관리위원회 교육 영상 본편</a>
+                                    <ul>
+                                        <li class="nth">법정교육 4차시</li>
+                                        <li>교육기간 : 2021-06-16 ~ 2021-06-20</li>
+                                        <li>모집정원 : 10,000명</li>
+                                    </ul>
+                                    <span class="point"><b>4.8</b> / 5.0</span>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="">
+                                        <img src="images/module/curri1-3.png" alt="지자체공무원 불법게임물 근절 공익광고 이미지">
+                                    </a>
+                                    <i>지자체 공무원</i>
+                                    <a class="sub_tit">게임물관리위원회 지자체 공무원 필수 교육</a>
+                                    <ul>
+                                        <li class="nth">법정교육 6차시</li>
+                                        <li>교육기간 : 2021-06-16 ~ 2021-06-20</li>
+                                        <li>모집정원 : 10,000명</li>
+                                    </ul>
+                                    <span class="point"><b>4.8</b> / 5.0</span>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="">
+                                        <img src="images/module/curri3-1.png" alt="지자체공무원 불법게임물 근절 공익광고 이미지">
+                                    </a>
+                                    <i>지자체 공무원</i>
+                                    <a class="sub_tit">게임물관리위원회 지자체 공무원 필수 교육</a>
+                                    <ul>
+                                        <li class="nth">법정교육 6차시</li>
+                                        <li>교육기간 : 2021-06-16 ~ 2021-06-20</li>
+                                        <li>모집정원 : 10,000명</li>
+                                    </ul>
+                                    <span class="point"><b>4.8</b> / 5.0</span>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="">
+                                        <img src="images/module/curri3-2.png" alt="지자체공무원 불법게임물 근절 공익광고 이미지">
+                                    </a>
+                                    <i>지자체 공무원</i>
+                                    <a class="sub_tit">게임물관리위원회 지자체 공무원 필수 교육</a>
+                                    <ul>
+                                        <li class="nth">법정교육 6차시</li>
+                                        <li>교육기간 : 2021-06-16 ~ 2021-06-20</li>
+                                        <li>모집정원 : 10,000명</li>
+                                    </ul>
+                                    <span class="point"><b>4.8</b> / 5.0</span>
+                                </li>
+                                <li class="swiper-slide">
+                                    <a href="">
+                                        <img src="images/module/curri3-3.png" alt="지자체공무원 불법게임물 근절 공익광고 이미지">
+                                    </a>
+                                    <i>지자체 공무원</i>
+                                    <a class="sub_tit">게임물관리위원회 지자체 공무원 필수 교육</a>
+                                    <ul>
+                                        <li class="nth">법정교육 6차시</li>
+                                        <li>교육기간 : 2021-06-16 ~ 2021-06-20</li>
+                                        <li>모집정원 : 10,000명</li>
+                                    </ul>
+                                    <span class="point"><b>4.8</b> / 5.0</span>
+                                </li>
+                            </ul>
+                            <div class="curri_next">
+                                <img src="images/common/slide_icon_arrow_right.png" alt="">
+                            </div>
+                            <div class="curri_prev">
+                                <img src="images/common/slide_icon_arrow_left.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //자체등급분류 -->
+                </article>
+             </section>
+        </div>
+        <footer>
+            <article>
+                <div class="footer_area">
+                    <ul>
+                        <li><a href="">개인정보처리방침</a></li>
+                        <li><a href="">홈페이지 저작권 정책</a></li>
+                        <li><a href="">이용약관</a></li>
+                    </ul>
+                    <address>[48058] 부산광역시 해운대구 센텀서로 39, 2층 Tel : 051-720-6800 Fax : 051-720-6889</address>
+                    <p class="copy">CopyrightⓒGame Rating And Administration Committee. All Rights Reserved.</p>
+                </div>
+                <div class="site">
+                    <label for="family_site"></label>
+                    <select title="관련 사이트 목록" id="family_site">
+                        <option value="">관련 사이트</option>
+                        <option value="" title="새창으로 이동">문화체육관광부</option>
+                        <option value="" title="새창으로 이동">한국게임산업협회</option>
+                    </select>
+                    
+                </div>
+            </article>
+        </footer>
+    </div>
+</body>
+</html>
