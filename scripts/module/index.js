@@ -1,11 +1,12 @@
 $(function(){
   // 헤더
-  $("nav > ul > li > a").mouseover(function(){            
-      $(this).next('.sub_menu').stop().slideDown(300);         
+  $("nav > ul > li").mouseover(function(){ 
+    $(this).children('.sub_menu').stop().slideDown(300);                   
     });           
-  $("nav > ul > li > a").mouseleave(function(){                     
-        $(this).next('.sub_menu').stop().slideUp(300);         
-      });
+  $("nav > ul > li").mouseleave(function(){                     
+        $(this).children('.sub_menu').stop().slideUp(300);             
+    });
+    
 
       // 전체메뉴리스트
       $("nav .all_btn").click(function(){            

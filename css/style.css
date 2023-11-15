@@ -341,7 +341,7 @@ header article .gnb_area nav > ul.gnb {
 }
 header article .gnb_area nav > ul.gnb > li {
   position: relative;
-  padding: 0 25px;
+  height: 58px;
 }
 header article .gnb_area nav > ul.gnb > li:last-child {
   padding-right: 77px;
@@ -350,8 +350,8 @@ header article .gnb_area nav > ul.gnb > li > a {
   color: #101010;
   font-size: 18px;
   font-weight: 700;
-  padding: 20px 0;
   display: block;
+  padding: 20px 25px;
 }
 header article .gnb_area nav > ul.gnb > li .sub_menu {
   display: none;
@@ -365,7 +365,7 @@ header article .gnb_area nav > ul.gnb > li .sub_menu {
   text-align: center;
   z-index: 99;
   font-size: 16px;
-  padding: 12px 15px;
+  padding: 12px 0;
   background: #fff;
   border-radius: 3px;
   -webkit-box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
@@ -380,6 +380,7 @@ header article .gnb_area nav > ul.gnb > li .sub_menu li:hover {
 }
 header article .gnb_area nav > ul.gnb > li .sub_menu li:hover a {
   color: #20bdbe;
+  padding: 15px 0;
 }
 header article .gnb_area nav > ul.mobile_btn .login {
   display: none;

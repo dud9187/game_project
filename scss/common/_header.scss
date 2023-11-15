@@ -29,7 +29,7 @@ header{
                         @include flexLayout(row, flex-end, center);
                         >li{
                             position: relative;
-                            padding: 0 25px;
+                            height: 58px;
                             &:last-child{
                                 padding-right: 77px;
                             }
@@ -37,8 +37,8 @@ header{
                                 color: #101010;
                                 font-size: 18px;
                                 font-weight: 700;
-                                padding: 20px 0;
                                 display: block;
+                                padding:20px 25px;
                             }
                             .sub_menu{
                                 display: none;
@@ -50,7 +50,7 @@ header{
                                 text-align: center;
                                 z-index: 99;
                                 font-size: 16px;
-                                padding: 12px 15px;
+                                padding: 12px 0;
                                 background: #fff;
                                 border-radius: 3px;
                                 box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;                        li{
@@ -60,6 +60,7 @@ header{
                                         font-weight: 500;
                                         a{
                                             color: #20bdbe;
+                                            padding: 15px 0;
                                         }
                                     }
                                 }
