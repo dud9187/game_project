@@ -1,0 +1,312 @@
+.sub{
+    margin: 50px 0;
+    &.board{
+        .location{
+            padding-left: 50px;
+            ul{
+                @include flexLayout (row,flex-start,center);
+                li{
+                    position: relative;
+                    font-size: 16px;
+                    padding-right: 30px;
+                    a{
+                        img{
+                            vertical-align: baseline;
+                        }
+                    }
+                    &:last-child{
+                        padding-right: 0;
+                        &::before{
+                            display: none;
+                        }
+                    }
+                    &::before{
+                        content: url(/images/common/mo_right_arrow.svg);
+                        position: absolute;
+                        right: 10px;
+                    }
+                }
+            }
+        }
+        section{
+            article{
+                text-align: center;
+                .top_area{
+                    margin-bottom: 30px;
+                    h3{
+                        font-size: 48px;
+                    }
+                    form{
+                        @include flexLayout(row,flex-end,center);
+                        gap: 20px;
+                        .notice_select{
+                            background: url('/images/common/mo_allmenu_arrow.svg') no-repeat 90% center;
+                            appearance: none;
+                            width: 100px;
+                            height: 50px;
+                            border: 1px solid #e0e0e0;
+                            padding: 5px 10px;
+                        }
+                        .search_box{
+                            background: url('/images/common/icon_search.png') no-repeat 90% center;
+                            width: 260px;
+                            height: 50px;
+                            border: 1px solid #e0e0e0;
+                            padding: 5px 10px;
+                        }
+                    }
+                }
+                .tbl_area{
+                    table{
+                        thead{
+                            th{
+                                font-size: 18px;
+                                padding: 20px 0;
+                                border-top: 2px solid #101010;
+                                border-bottom: 1px solid #e0e0e0;
+                            }
+                        }
+                        tbody{
+                            tr{
+                                &:hover{
+                                    background: #f1f1f1;
+                                }
+                                td{
+                                    font-size: 16px;
+                                    padding: 15px 0;
+                                    border-bottom:1px solid #e0e0e0;
+                                }
+                            }
+                        }
+                    }
+                    .pagination{
+                        margin-top: 30px;
+                        @include flexLayout (row ,center,center);
+                        gap: 15px;
+                        li{
+                            a{
+                                display: block;
+                                font-size: 18px;
+                                width: 20px;
+                                height: 30px;
+                               line-height: 30px;
+                                &:hover{
+                                    font-weight: 600;
+                                    color: #20bdbe;
+                                    border: 1px solid #20bdbe;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.faq{
+            .tbl_area{
+                table{
+                    border-top: 2px solid #101010;
+                    tr{
+                        &:hover{
+                            background: none;
+                        }
+                        &.answer{
+                            background: #f1f1f1;
+                            td{
+                                padding: 0;
+                                border: none;
+                                div{
+                                    padding: 30px 50px;
+                                    text-align: left;
+                                    span{
+                                        display: block;
+                                        margin-bottom: 20px;
+                                        font-size: 28px;
+                                        color: #2ac0c1;
+                                    }
+                                }
+                            }
+                        }
+                        td{
+                            padding: 20px 0;
+                            &.qus_num{
+                                font-size: 28px;
+                            }
+                            &.qus_tit{
+                                text-align: left;
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:1180px){
+    .sub {
+            margin: 50px 0;
+            &.board {
+                &.faq {
+                    .tbl_area {
+                        table {
+                            tr {
+                                &.answer {
+                                    background: #f1f1f1;
+                                    td {
+                                        div {
+                                            padding: 30px;
+                                            p{
+                                                line-height: 1.2;
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+            }
+        }
+}
+@include mediaQuery(mobile){
+.sub {
+    margin: 5rem 0;
+    &.board {
+        .location {
+            padding-left: 0;
+            padding-right: 3rem;
+            ul {
+                justify-content: flex-end;
+                li {
+                    font-size: 1.6rem;
+                    padding-right: 3rem;
+                }   
+            }
+        }
+        section {
+            article {
+                .top_area {
+                    margin-bottom: 3rem;
+                    h3 {
+                        font-size: 4.8rem;
+                    }
+                    form {
+                        gap: 2rem;
+                        .notice_select {
+                            height: 5rem;
+                            padding: 0.5rem 1rem;
+                        }
+                        .search_box {
+                            width: 26rem;
+                            height: 5rem;
+                            padding: 0.5rem 1rem;
+                        }
+                    }
+                }
+                .tbl_area {
+                    table {
+                        thead {
+                            th {
+                                font-size: 1.8rem;
+                                padding: 2rem 0;
+                            }
+                        }
+                        tbody {
+                            tr {
+                                td {
+                                    font-size: 1.6rem;
+                                    padding: 1.5rem;
+                                }
+                            }
+                        }
+                    }
+                    .pagination {
+                        margin-top: 3rem;
+                        gap: 1.5rem;
+                        li {
+                            a {
+                                font-size: 1.8rem;
+                                width: 2rem;
+                                height: 3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.notice{
+            .tbl_area{
+                table{
+                    border-collapse: collapse;
+                    colgroup{
+                        display: none;
+                    }
+                    thead{
+                        display: none;
+                    }
+                    tbody{
+                        border-top: 2px solid #101010;
+                        width: 100%;
+                        position: relative;
+                        tr{
+                            width: 100%;
+                            border-bottom: 1px solid #e0e0e0;
+                            td{
+                                text-align: left;
+                                float: left;
+                                border-bottom: none;
+                                &.notice_num{
+                                    display: none;
+                                }
+                                &.notice_tit{
+                                    font-size: 2rem;
+                                    width: 100% !important;
+                                    display: block;
+                                }
+                                &.date{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.faq {
+            .tbl_area {
+                table {
+                    colgroup {
+                        display: none;
+                    }
+                    tr {
+                        &.answer {
+                            td {
+                                div {
+                                    padding: 3rem 2rem;
+                                    span {
+                                        font-size: 2.8rem;
+                                        margin-bottom: 2rem-;
+                                    }
+                                }
+                            }
+                        }
+                        td {
+                            padding: 2rem 0 2rem 1.5rem;
+                            text-align: left;
+                            &.qus_num {
+                                font-size: 2.8rem;
+
+                            }
+                            &.qus_tit {
+                                font-size: 1.8rem;
+                                width: 80%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
