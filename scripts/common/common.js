@@ -28,7 +28,7 @@ $(function(){
     });  
 
     // 전체메뉴리스트 -mo
-    $(".mo_btn .mo_all_btn").click(function(){ 
+    $(".mo_all_btn").click(function(){ 
       $(this).parents('article').nextAll(".mo_nav").addClass('on')                 
     });           
     $(".mo_nav .mo_close").click(function(){    
