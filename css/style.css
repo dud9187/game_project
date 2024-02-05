@@ -292,6 +292,12 @@ header article .logo {
   padding-top: 20px;
   width: 25%;
 }
+header article .logo a {
+  display: block;
+}
+header article .logo a img {
+  width: 100%;
+}
 header article .gnb_area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -537,9 +543,7 @@ header .mo_nav {
   }
   header article .logo {
     position: static;
-  }
-  header article h1 {
-    width: 50%;
+    width: 70%;
   }
   header article .gnb_area {
     display: none;
@@ -793,7 +797,7 @@ header .mo_nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     padding: 4rem 3rem;
   }
   header div.mo_nav .mo_menu_list .part ul li .tit img {
@@ -810,7 +814,7 @@ header .mo_nav {
   }
   header div.mo_nav .mo_menu_list .part ul li .mo_sub_menu li a {
     display: block;
-    font-size: 1.8rem;
+    font-size: 2rem;
     padding: 2rem 5rem;
   }
 }
