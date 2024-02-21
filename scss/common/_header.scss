@@ -275,7 +275,7 @@ header {
                             position: relative;
                             &::before{
                                 position: absolute;
-                                content: url(/images/common/mo_right_arrow.svg);
+                                content: url(../images/common/mo_right_arrow.svg);
                                 right: -15px;
                                 top: 50%;
                                 transform: translateY(-50%);
