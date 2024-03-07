@@ -22,6 +22,9 @@ footer{
                         transform: translateY(-50%);
                     }
                     &:first-child{
+                        &::before{
+                            display: none;
+                        }
                         a{
                             padding-left: 0;
                         }
