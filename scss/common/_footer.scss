@@ -1,6 +1,8 @@
 footer{
     background: #282828;
     font-size: 14px;
+    position: relative;
+    transform: translatY(-100%);
     article{
         @include flexLayout(row, space-between, center);
         width: 1280px;

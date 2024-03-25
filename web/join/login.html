@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>...</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/scripts/module/jquery-1.10.2.min.js"></script>
+    <script src="/scripts/include.js"></script>
+    <script defer src="/scripts/common/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header data-include-path="/common/header.html">
+        </header>
+        <div id="container" class="sub board login">
+            <section>
+                <article>
+                    <div class="top_area">
+                        <h3 class="tit">Login</h3>
+                        <form action="login.html" id="login_box" class="login_form">
+                            <div class="login_box">
+                                <input type="text" id="id" placeholder="아이디 입력">
+                                <input type="password" id="pw" placeholder="비밀번호 8~12자">
+                            </div>
+                            <div class="btn_box">
+                                <button class="btn login" type="submit" onclick="login();"><a href="">login</a>
+                                <button class="btn"><a href="/web/join/join.html">join</a></button>
+                            </div>
+                        </form>
+                        <div class="find">
+                            <a href="#">아이디 / 비밀번호 찾기</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <footer data-include-path="/common/footer.html">
+        </footer>
+    </div>
+</body>
+<script>
+    function login() {
+        var id = document.querySelector('#id');
+        var pw = document.querySelector('#pw');
+
+        if (id.value == "" || pw.value == "") {
+            alert("로그인을 할 수 없습니다.")
+        }
+    }
+</script>
+</html>

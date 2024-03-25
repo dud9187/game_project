@@ -1,5 +1,6 @@
 .sub{
     margin: 50px 0;
+    height: 100%;
     &.board{
         .location{
             padding-left: 50px;
@@ -12,6 +13,7 @@
                     a{
                         img{
                             vertical-align: baseline;
+                            width: 20px;
                         }
                     }
                     &:last-child{
@@ -24,6 +26,8 @@
                         content: url(/images/common/mo_right_arrow.svg);
                         position: absolute;
                         right: 10px;
+                        top: 50%;
+                        transform: translateY(-50%);
                     }
                 }
             }
@@ -37,22 +41,24 @@
                         font-size: 48px;
                     }
                     form{
-                        @include flexLayout(row,flex-end,center);
-                        gap: 20px;
-                        .notice_select{
-                            background: url('/images/common/mo_allmenu_arrow.svg') no-repeat 90% center;
-                            appearance: none;
-                            width: 100px;
-                            height: 50px;
-                            border: 1px solid #e0e0e0;
-                            padding: 5px 10px;
-                        }
-                        .search_box{
-                            background: url('/images/common/icon_search.png') no-repeat 90% center;
-                            width: 260px;
-                            height: 50px;
-                            border: 1px solid #e0e0e0;
-                            padding: 5px 10px;
+                        &.search_form{
+                            @include flexLayout(row,flex-end,center);
+                            gap: 20px;
+                            .notice_select{
+                                background: url('/images/common/mo_allmenu_arrow.svg') no-repeat 90% center;
+                                appearance: none;
+                                width: 100px;
+                                height: 50px;
+                                border: 1px solid #e0e0e0;
+                                padding: 5px 10px;
+                            }
+                            .search_box{
+                                background: url('/images/common/icon_search.png') no-repeat 90% center;
+                                width: 260px;
+                                height: 50px;
+                                border: 1px solid #e0e0e0;
+                                padding: 5px 10px;
+                            }
                         }
                     }
                 }
@@ -192,15 +198,22 @@
                         font-size: 4.8rem;
                     }
                     form {
-                        gap: 2rem;
-                        .notice_select {
-                            height: 5rem;
-                            padding: 0.5rem 1rem;
-                        }
-                        .search_box {
-                            width: 26rem;
-                            height: 5rem;
-                            padding: 0.5rem 1rem;
+                        &.search_form{
+                            justify-content: center;
+                            gap: 2rem;
+                            .notice_select {
+                                height: 5rem;
+                                padding: 0.5rem 1rem;
+                                font-size: 2rem;
+                            }
+                            .search_box {
+                                width: 26rem;
+                                height: 5rem;
+                                padding: 0.5rem 1rem;
+                                &::placeholder{
+                                    font-size: 2rem;
+                                }
+                            }
                         }
                     }
                 }

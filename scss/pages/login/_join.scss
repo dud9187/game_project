@@ -1,0 +1,59 @@
+.sub{
+    &.join{
+        section{
+            article{
+                margin-top: 90px !important;
+                text-align: left;
+                .join_area{
+                    width: 100%;
+                    @include flexLayout(column,flex-start,flex-start);
+                    .tit{
+                        font-size: 32px;
+                    }
+                    .join_form{
+                        width: 900px;
+                        .join_box{
+                            margin-bottom: 20px;
+                            li{
+                                padding: 20px 10px;
+                                border-bottom: 2px solid #767676;
+                                @include flexLayout(row,flex-start,center);
+                                label{
+                                    font-weight: 700;
+                                    width: 20%;
+                                    font-size: 16px;
+                                }
+                                input{
+                                    &.join_txt{
+                                        width: 300px;
+                                        height: 50px;
+                                    }
+                                }
+                            }
+                        }
+                        .btn_box{
+                            display: flex;
+                            justify-content: flex-end;
+                            .join{
+                                width: 100px;
+                                border: none;
+                                a{
+                                    width: 100%;
+                                    display: inline-block;
+                                    padding: 10px 0;
+                                    border: 1px solid #222;
+                                    text-align: center;
+                                    font-size: 16px;
+                                    &:hover{
+                                        background: #222;
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

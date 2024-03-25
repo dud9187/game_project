@@ -29,10 +29,12 @@ $(function(){
 
     // 전체메뉴리스트 -mo
     $(".mo_all_btn").click(function(){ 
-      $(this).parents('article').nextAll(".mo_nav").addClass('on')                 
+      $(this).parents('article').nextAll(".mo_nav").addClass('on');
+      $('body').addClass('hidden');
     });           
     $(".mo_nav .mo_close").click(function(){    
-      $(this).parents('.mo_nav').removeClass('on')        
+      $(this).parents('.mo_nav').removeClass('on') ;
+      $('body').removeClass('hidden');       
     });  
     
       
