@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <title>...</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/scripts/module/jquery-1.10.2.min.js"></script>
+    <script src="/scripts/include.js"></script>
+    <script defer src="/scripts/common/common.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header data-include-path="/common/header.html">
+        </header>
+        <div id="container" class="sub board notice">
+            <div class="location">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="/images/common/loca_icon_home.png" alt="로케이션 홈 이미지">
+                        </a>
+                    </li>
+                    <li>소통마당</li>
+                    <li>공지사항</li>
+                </ul>
+            </div>
+            <section>
+                <article>
+                    <div class="top_area">
+                        <h3 class="tit">공지사항</h3>
+                        <form action="search" class="search_form">
+                            <select id="title" class="notice_select">
+                                <option value="title">제목</option>
+                                <option value="cnt">내용</option>
+                            </select>
+                            <fieldset>
+                                <label for="search_box"></label>
+                                <input type="text" class="search_box" id="search_box" placeholder="검색어를 입력하세요.">
+                            </fieldset>
+                        </form>
+                    </div>
+                    <div class="tbl_area">
+                        <table>
+                            <colgroup>
+                                <col width="10%">
+                                <col width="50%">
+                                <col width="15%">
+                                <col width="10%">
+                                <col width="10%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th class="notice_num">번호</th>
+                                    <th>제목</th>
+                                    <th>등록일</th>
+                                    <th>등록자</th>
+                                    <th>조회수</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="notice_num">공지</td>
+                                    <td class="notice_tit"><a href="">2022 게임물 관련사업자 교육 관련 문의 안내</a></td>
+                                    <td class="date">2022.06.22 16:46</td>
+                                    <td>관리자</td>
+                                    <td>396</td>
+                                </tr>
+                                <tr>
+                                    <td class="notice_num">2</td>
+                                    <td class="notice_tit"><a href="">2022 게임물 관련사업자 교육 관련 문의 안내</a></td>
+                                    <td class="date">2022.06.22 16:46</td>
+                                    <td>관리자</td>
+                                    <td>396</td>
+                                </tr>
+                                <tr>
+                                    <td class="notice_num">1</td>
+                                    <td class="notice_tit"><a href="">2022 게임물 관련사업자 교육 관련 문의 안내</a></td>
+                                    <td class="date">2022.06.22 16:46</td>
+                                    <td>관리자</td>
+                                    <td>396</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <ul class="pagination">
+                            <li><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li><a href="#">4</a></li>
+                            <li><a href="#">5</a></li>
+                        </ul>
+                    </div>
+                </article>
+            </section>
+        </div>
+        <footer data-include-path="/common/footer.html">
+        </footer>
+    </div>
+</body>
+</html>
